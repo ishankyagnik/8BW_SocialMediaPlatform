@@ -1,0 +1,24 @@
+<div class="sidebar text-white z-[10] bg-zinc-900 sm:hidden lg:flex">
+    <div>
+        <br><br><br>
+
+        <div class="w-full px-4 flex items-center justify-between">
+            <h1 class="text-3xl font-medium">allnewfaces</h1>
+        </div>
+        
+        <% if(footer){ %>
+            <div class="">
+        <br><br>
+        <a href="/feed" class="flex"><i class="text-[1.4rem] ri-home-line"></i><p class="pl-5"> Home</p></a><br>
+        <a href="/search" class="flex"><i class="text-[1.4rem] ri-search-line"></i><p class="pl-5"> Search</p></a><br>
+        <a href="/upload" class="flex"><i class="text-[1.4rem] ri-add-box-line"></i><p class="pl-5"> Upload</p></a><br>
+        <a href="/profile" class="flex">
+            <div class="w-8 h-8 bg-zinc-300 rounded-full overflow-hidden">
+                <img src="/images/uploads/<%= user.picture %>" alt="">
+            </div>
+            <p class="px-5">Profile</p>
+        </a>
+    </div>
+    <% } %>
+</div>
+</div>

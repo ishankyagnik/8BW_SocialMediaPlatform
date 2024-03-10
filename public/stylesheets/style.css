@@ -1,0 +1,40 @@
+.story::-webkit-scrollbar{
+  display: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .Body {
+    width: 75%;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  .sidebar {
+    display: none;
+  }
+}
